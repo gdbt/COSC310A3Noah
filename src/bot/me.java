@@ -20,9 +20,9 @@ public class me extends chatBot implements TopicQuestions {
 			"You are " /* user name */ };
 	String[] what = { "I am a dinosaur.", "I am Tee-Tee.", "I am a T-rex. You can call me Tee-Tee.",
 			"I am a ancient giant chicken.", "I can eat, eat, and Talk to you.", "I like food and other things.",
-			"It's 100,000,000,000 years before ", "It's " /* today's day */, "You are " /* user name */, "I like stone.", "I like gem.", "I like rock.", "I like bones", "I like bubble tea", "I like milk tea", "I love Lord of the Ring"};
+			"It's 69,000,000 years before ", "It's " /* today's day */, "You are " /* user name */, "I like stone.", "I like gem.", "I like rock.", "I like bones", "I like bubble tea", "I like milk tea", "I love Lord of the Ring"};
 	String[] when = { "During luchtime", "During dinner time.", "Perhaps during breakfast time.", "Two days ago.",
-			"It's Triassic Period.", "It's 100,000,000,000 years before ", "250 million years later." };
+			"It's Triassic Period.", "It's 69,000,000 years before ", "250 million years later." };
 	String[] where = { "You are at my place.", "You are in my stomach.", "You are in the middle of a big continent." };
 	String[] how = { "I am starving", "I am good.", "How rude! I am 35 years old", "My age is a secret.",
 			"I am 40 ft tall.", "I am 12.3 meters tall.", "He died from a fireball from the sky." };
