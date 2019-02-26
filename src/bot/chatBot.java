@@ -9,17 +9,17 @@ public class chatBot {
 	
 	public static void main(String args[]) {
 		irrTopic = new IrrelavantTopic();
-		Loadingscrean.main(args); 
+		//Loadingscrean.main(args);  ****TEMPORARILY REMOVED FOR EASE OF TESTING
 
-		System.out.println("ROAr roar roooar roar rrrroooaaaarrr RoaaaaaaaaaaaaaaaAAArrArArAr");
-		System.out.println("Welcome to the Dino-Bot, Please Enter the name you would like to be called by.");
-		Scanner mainscan = new Scanner(System.in);
-		name = mainscan.nextLine();
-		System.out.println("Greetings " + name + ". My name is Tee-Tee the T-Rex!!");
-		System.out.println("If you are curious type \"help\" to get a list of topics I will talk to you about!");
+//		System.out.println("ROAr roar roooar roar rrrroooaaaarrr RoaaaaaaaaaaaaaaaAAArrArArAr");
+//		System.out.println("Welcome to the Dino-Bot, Please Enter the name you would like to be called by.");
+//		Scanner mainscan = new Scanner(System.in);
+//		name = mainscan.nextLine();
+//		System.out.println("Greetings " + name + ". My name is Tee-Tee the T-Rex!!");
+//		System.out.println("If you are curious type \"help\" to get a list of topics I will talk to you about!");
 		//feel free to change later, just did this so i could access code from main area
 		inputfield();
-		mainscan.close();
+//		mainscan.close(); ***** TEMPORARILY CLOSED FOR SPEED OF TESTING
 
 		
 	}
@@ -114,9 +114,9 @@ public class chatBot {
 	//helpMe prompts user with list of topics the bot is able to talk about.
 	public static void helpMe() {
 		System.out.println("Curious to know what I can talk about? Have a list"); //prints list of topics
-		System.out.println(thinking());	  //************************************************
-		System.out.println(thinking());   //*ISSUE WITH THINKING METHOD OMITTED FOR TESTING*
-		System.out.println(thinking());   //************************************************
+		System.out.println(thinking());	  
+		System.out.println(thinking());   
+		System.out.println(thinking());   
 		System.out.println("..........."); //spacer
 		System.out.println("We can test how well your roar is!");			 	//Prompts roar contest
 		System.out.println("Or we can talk about food");						//Prompts food topic
@@ -129,7 +129,7 @@ public class chatBot {
 	
 	public static void aboutMe() {
 		System.out.println("My name is Tee-Tee and I am a Java jar program,");
-		System.out.println("coded by Eric, Noah, Yue, Aidan and Kathryn - for their COSC 310 Assignment.");
+		System.out.println("Coded by Eric, Noah, Yue, Aidan and Kathryn - for their COSC 310 Assignment. This Version is tweaked by Noah");
 		System.out.println("They hope you'll get the full experience of talking to an old dinosaur like me!");
 	}
 	

@@ -18,7 +18,7 @@ public class food extends chatBot implements TopicQuestions {
 	String[] who = {"Sometimes with myself", "Sometimes with other dinosaurs", "by myself", "The owner."};
 	String[] how = {"four times", "It's so delicious", "By my hand", "It's a combination of tea and milk and tapioca balls.", "I like it half sweet."};
 	String[] why = {"I need to eat.", "Because you look delicious."};
-	String[] when = {"During luchtime", "Durig dinner time.", "Perhaps during breakfest time.", "Two days ago.", "When I am hungry."};		
+	String[] when = {"During luchtime", "During dinner time.", "Perhaps during breakfest time.", "Two days ago.", "When I am hungry."};		
 
 	
 	@Override
@@ -102,6 +102,7 @@ public class food extends chatBot implements TopicQuestions {
 		else if (input.contains("bubble tea") && input.contains("invent")){
 			System.out.println(where[1]);
 		}
+
 	}
 
 
@@ -133,10 +134,11 @@ public class food extends chatBot implements TopicQuestions {
 	public void whyQuestion(String input) {
 		// TODO Auto-generated method stub
 		if (input.contains("eat") && (input.contains("me")|| input.contains("human"))){
-			System.out.println(who[1]);
+			System.out.println(why[1]);
 		}
 		else if (input.contains("eat")){
-			System.out.println(who[0]);
+			
+			System.out.println(why[0]);
 		}
 	}
 
@@ -147,7 +149,7 @@ public class food extends chatBot implements TopicQuestions {
 		// TODO Auto-generated method stub
 		if (input.contains("about")){
 			System.out.println(how[1]);
-		} else if (input.contains("many") && input.contains("meal") && (input.contains("eat"))){
+		} else if (input.contains("many") && input.contains("meals") && (input.contains("eat"))){
 			System.out.println(how[0]);
 		} else if (input.contains("do") && input.contains("eat")){
 			System.out.println(how[2]);

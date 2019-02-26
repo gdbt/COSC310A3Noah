@@ -15,16 +15,19 @@ public class IrrelavantTopic extends chatBot{
 
 	ArrayList<ArrayList<String>> topics = new ArrayList<ArrayList<String>>();
 	
-	ArrayList<String> foodRelated = new ArrayList<String>(){{add("food");add("eat");add("drink");add("tea");add("bubble");}};
-	ArrayList<String> me = new ArrayList<String>(){{add("me");add("i");add("we");add("name");add("like");add("date");add("age");add("day");add("old");add("die");add("excellent");add("good");add("tall");add("long");add("size");add("big");add("can");add("capable");}};
-	ArrayList<String> hobbies = new ArrayList<String>(){{add("shmeegulXD");add("reading");add("books");add("hobbies");add("shmeegul");add("hobbits");add("wizards");add("lotr");add("lord");add("movies");;}};
+	ArrayList<String> foodRelated = new ArrayList<String>(){{add("food");add("eat");add("drink");add("tea");add("bubble");add("cook");add("drinks");}};
+	ArrayList<String> me = new ArrayList<String>(){{add("me");add("i");add("we");add("name");add("date");add("age");add("day");add("old");add("die");add("excellent");add("good");add("tall");add("long");add("size");add("big");add("can");add("capable");}};
+	ArrayList<String> hobbies = new ArrayList<String>(){{add("shmeegulXD");add("reading");add("books");add("hobbies");add("shmeegul");add("hobbits");add("wizards");add("lotr");add("lord");add("movies");add("wormtongue");}};
 	ArrayList<String> collection = new ArrayList<String>(){{add("collection");add("rock");add("rocks");add("bone");add("bones");add("gem");add("gems");add("plant");add("plants");add("collect");add("dangerous");}};
+	ArrayList<String> travel = new ArrayList<String>() {{add("travel");add("kelowna");add("vancouver");add("london");add("cuba");add("places");add("live");}};
+	
 	
 	IrrelavantTopic(){ //constructor to initialize checking
 		topics.add(foodRelated);
 		topics.add(hobbies);
 		topics.add(collection);
 		topics.add(me);
+		topics.add(travel);
 
 	}
 	
@@ -68,12 +71,9 @@ public class IrrelavantTopic extends chatBot{
 			if(hasQuestion==false) { // if "what do" has not set hasQuestion to true
 				switch (keyword) {
 				// check for w/h questions
-					case "who": case "what": case "where": case "when": case "how":
+					case "who": case "what":  case "why": case "where": case "when": case "how":
 					hasQuestion = true; wHquestion=keyword; break;
-				// check for "do you like..." questions	
-					case "do":
-					doQuestion(input); return true;
-					default: break;
+				// check for "do you like..." questions				
 				}
 				}
 			for(int j = 0; j < topics.size(); j++) {
@@ -99,15 +99,7 @@ public class IrrelavantTopic extends chatBot{
 		
 	}
 	
-	public void doQuestion(String input) {
-		if (input.contains("eating")||input.contains("eat")||input.contains("drink")||input.contains("rocks")||input.contains("bubble tea")||input.contains("collecting")||input.contains("lord of the rings")||input.contains("books")||input.contains("food")||input.contains("stones")) 
-//		case "eating": case "eat": case "drinking": case "drink": case "bubble": case "rocks": case "rock": case "bones": case "bone":
-			System.out.println("Yes I do.");
-		else
-			System.out.println("No I do not."); 
-		
-		return;
-	}
+
 		
 }
 

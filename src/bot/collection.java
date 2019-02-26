@@ -3,7 +3,7 @@ package bot;
 import java.util.Scanner;
 
 @SuppressWarnings("resource")
-public class collection implements TopicQuestions {
+public class collection {
 static int mathtest;
 	public void runTopic(String input)  {
 		// TODO Auto-generated method stub
@@ -43,7 +43,7 @@ static int mathtest;
 			mathtest = (int)(Math.random()*3);
 			if(mathtest == 0)
 				System.out.println("After eating I might collect the bones");
-			if(mathtest == 1)
+			else if(mathtest == 1)
 				System.out.println("I wonder around during the day to find things");
 			else
 				System.out.println("Definitely not at night, too hard to see things");
@@ -216,51 +216,4 @@ static int mathtest;
 		}
 	}
 
-
-
-	@Override
-	public void whoQuestion(String input) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public void whatQuestion(String input) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public void whereQuestion(String input) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public void whenQuestion(String input) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public void whyQuestion(String input) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	@Override
-	public void howQuestion(String input) {
-		// TODO Auto-generated method stub
-		
-	}
 }
